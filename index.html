@@ -14,7 +14,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-image:url(../space.png);
+            background-image:url(space.png);
         }
         #cc{
          border: 1px solid black;   
@@ -35,8 +35,8 @@
         const ctx = canvas.getContext("2d");
         const img = new Image();
         const img2 = new Image();
-        img.src = '../22.png';
-        img2.src = '../grab2.png';
+        img.src = './22.png';
+        img2.src = './grab2.png';
         const width = canvas.width;
         const height = canvas.height;
         const tankWidth = 50;
@@ -114,7 +114,7 @@
               isHitted = true;
               clearInterval(start);
               if (confirm("무사히 지구로 돌아왔다.")) {
-                location.href("./4.html");
+                location.replace("https://30ling.github.io/robotarm1/");
               } else {
                 location.reload();
               }
@@ -160,5 +160,5 @@
         draw();
 
     </script>
-    <script src = "../팀플/2.js"></script>
+    <script src = "./2.js"></script>
 </body>
